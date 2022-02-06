@@ -1,0 +1,44 @@
+{
+  "name": "practice-questions-simulator",
+  "version": "0.0.0",
+  "description": "This software will request input for questions and then run unit tests to check your answers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d build",
+    "start": "npm run build && node ./build/main.js",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheTreeofGrace/istqb-bcs-practice-questions.git"
+  },
+  "keywords": [
+    "istqb",
+    "bcs",
+    "questions",
+    "practice",
+    "software",
+    "testing",
+    "foundation"
+  ],
+  "author": "Grace Tree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheTreeofGrace/istqb-bcs-practice-questions/issues"
+  },
+  "homepage": "https://github.com/TheTreeofGrace/istqb-bcs-practice-questions#readme",
+  "resolutions": {
+    "ansi-regex": "^6.0.1"
+  },
+  "dependencies": {
+    "jest": "^27.5.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "ansi-regex": "^6.0.1"
+  }
+}
